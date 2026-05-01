@@ -1,0 +1,12 @@
+[project]
+name = "multi-agent-workflow"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain-ollama>=1.1.0",
+    "langgraph>=1.1.10",
+    "pydantic>=2.13.3",
+    "python-dotenv>=1.2.2",
+]
