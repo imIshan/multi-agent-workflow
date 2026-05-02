@@ -4,10 +4,12 @@ workflow = create_workflow()
 
 initial_state = {
     'user_request': 'Explain langgraph and compare it with langchain',
-    'plan': None
+    'plan': None,
+    'final_answer': None
 }
 final_state = workflow.invoke(initial_state)
 plan: Plan  = final_state['plan']
+final_answer = final_state['final_answer']
 
 print("Task type:", plan.task_type)
 print("Needs retrieval:", plan.needs_retrieval)
@@ -15,3 +17,6 @@ print("Needs retrieval:", plan.needs_retrieval)
 print("\nSteps:")
 for step in plan.steps:
     print("-", step)
+
+print("\nFinal answer:")
+print(final_answer)
