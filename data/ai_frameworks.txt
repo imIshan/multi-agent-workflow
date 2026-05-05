@@ -1,0 +1,15 @@
+LangGraph is a framework for building stateful, multi-step AI workflows.
+It is useful when an AI application needs planning, routing, tool usage, memory, or multiple agents.
+
+LangGraph works well for agentic workflows because it lets developers define nodes, edges, state, and conditional routing.
+
+LangChain is a framework for building LLM applications.
+It provides abstractions for prompts, models, chains, tools, retrievers, and integrations.
+
+LangChain is useful when you want to connect language models with external systems quickly.
+
+Chroma is a local vector database.
+It stores embeddings and lets applications search documents by semantic meaning.
+
+Ollama allows developers to run large language models locally.
+It is useful for private, low-cost, local AI development.
